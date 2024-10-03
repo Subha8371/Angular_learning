@@ -541,7 +541,9 @@ onfilterchange(value:string){
   this.selectedFilterRadio=value;
 }
 
-
+ all:number=this.products.length
+ inStockCount: number = this.products.filter(p => { return p.is_in_inventory === true; }).length;
+ outStockCount:number=this.products.filter(p => { return p.is_in_inventory === false; }).length
 
 
   @Input()

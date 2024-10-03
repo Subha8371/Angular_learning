@@ -1,10 +1,12 @@
 <input 
 type="text"
-[(ngModel)]="xxx"
+#searchInput
 >
 
 <button
-(click)="onSubmit()"
+(click)="onSubmit(searchInput)"
 >
     search
 </button>
+
+<!-- <h1>{{searchText}}</h1> -->

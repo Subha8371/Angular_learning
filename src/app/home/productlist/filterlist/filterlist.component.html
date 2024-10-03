@@ -1,5 +1,5 @@
 <div class="card flex justify-content-center">
-    <div class="flex flex-column gap-3">
+    <div class="flex flex-row gap-3">
         <div class="flex align-items-center">
             <p-radioButton 
                 name="filter" 
@@ -19,7 +19,7 @@
                 (ngModelChange)="onselectedradiobtnchange()"
                 inputId="inStockRadio">
             </p-radioButton>
-            <label for="inStockRadio" class="ml-2">In Stock ({{instock}})</label>
+            <label for="inStockRadio" class="ml-2">In Stock ({{inStockCount}})</label>
         </div>
 
         <div class="flex align-items-center">

@@ -8,7 +8,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export class FilterlistComponent {
 
   @Input() all: number = 0;
-  @Input() instock: number = 0;
+  @Input() inStockCount: number = 0;
   @Input() outofstock: number = 0;
 
   @Output()

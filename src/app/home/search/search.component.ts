@@ -10,8 +10,10 @@ export class SearchComponent {
 
   @Output()
   inputchange:EventEmitter<string>=new EventEmitter<string>
+  searchText: string='';
 
-  onSubmit(){
-    this.inputchange.emit(this.xxx)
+  onSubmit(inputEl:HTMLInputElement){
+    this.searchText=inputEl.value;
+    this.inputchange.emit(this.searchText)
   }
 }
