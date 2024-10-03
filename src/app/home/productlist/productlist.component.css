@@ -1,0 +1,38 @@
+/* Styles for the main product container */
+.ekart--product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Styles for individual product components */
+  .ekart--product-container app-product {
+    flex: 1 1 300px; /* Each product takes up at least 300px, and flexes with the container */
+    max-width: 300px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .ekart--product-container app-product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Ensuring responsive behavior on smaller screens */
+  @media (max-width: 768px) {
+    .ekart--product-container {
+      justify-content: center;
+    }
+  
+    .ekart--product-container app-product {
+      max-width: 100%;
+      flex: 1 1 100%;
+    }
+  }
+  

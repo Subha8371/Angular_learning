@@ -1,0 +1,30 @@
+/* Main container styling */
+div {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Styling the search component */
+  app-search {
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  /* Product list container */
+  app-productlist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  /* Responsive behavior */
+  @media (max-width: 768px) {
+    app-productlist {
+      justify-content: center;
+    }
+  }
+  

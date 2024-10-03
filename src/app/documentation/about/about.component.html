@@ -1,0 +1,8 @@
+<p>about works! <span>{{docs}}</span></p>
+<app-nestedcomponent [docs]="about"
+  (inputchange)="oninputchange($event)"
+></app-nestedcomponent>
+
+<h1>{{xyz}}</h1>
+
+<app-nestedcomponentsibling  [a]="xyz"></app-nestedcomponentsibling> 
