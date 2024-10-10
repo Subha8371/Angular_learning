@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-
+import { product } from 'src/app/models/product';
 @Component({
   selector: 'app-productlist',
   templateUrl: './productlist.component.html',
@@ -8,6 +8,9 @@ import { Component, Input } from '@angular/core';
 export class ProductlistComponent {
 // 20240922200550
 // https://dummyjson.com/products
+
+ selectedProduct!: product;
+
 products = [
   {
     id: 1,

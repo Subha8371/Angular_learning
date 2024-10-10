@@ -19,6 +19,7 @@ import { FilterlistComponent } from './home/productlist/filterlist/filterlist.co
 import { RadioButtonModule } from 'primeng/radiobutton';
 import { NestedcomponentsiblingComponent } from './documentation/about/nestedcomponentsibling/nestedcomponentsibling.component';
 import { SearchComponent } from './home/search/search.component';
+import { ProductDetailsComponent } from './home/product-details/product-details.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +35,8 @@ import { SearchComponent } from './home/search/search.component';
     NestedcomponentComponent,
     FilterlistComponent,
     NestedcomponentsiblingComponent,
-    SearchComponent
+    SearchComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,

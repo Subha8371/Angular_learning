@@ -6,7 +6,7 @@
 ></app-filterlist>
 
 <!-- *ngIf="selectedFilterRadio==='all' || prod.is_in_inventory.toString()===selectedFilterRadio" -->
-<div class="ekart--product-container" *ngFor="let prod of products">
+<div class="ekart--product-container" *ngFor="let prod of products" (click)="selectedProduct = prod">
   <app-product
     [product]="prod"
     *ngIf="

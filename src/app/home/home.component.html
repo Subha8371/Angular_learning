@@ -1,5 +1,5 @@
-
 <div>
     <app-search (inputchange)="search($event)"></app-search>
-    <app-productlist [searching]="xxx"></app-productlist>
+    <app-productlist [searching]="xxx"  #ProductlistComponent></app-productlist>
+    <product-details *ngIf="ProductlistComponent.selectedProduct"></product-details>
 </div>
